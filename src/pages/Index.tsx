@@ -49,6 +49,43 @@ const Index = () => {
       )}>
         <p>Create beautiful Barbie-style text with our font generator.</p>
       </footer>
+
+      {/* SEO Content Section */}
+      <section className={cn(
+        "max-w-4xl mx-auto px-4 py-12 text-muted-foreground text-sm transition-opacity duration-500",
+        isLoaded ? "opacity-100" : "opacity-0"
+      )}>
+        <div className="prose prose-sm max-w-none">
+          <h2 className="text-2xl font-bold text-primary mb-4">About Our Free Barbie Font Generator</h2>
+          <p>
+            Welcome to the ultimate <strong>Barbie font generator free</strong> tool that lets you create stunning Barbie-inspired text for all your creative projects. Whether you're planning a Barbie-themed party, creating social media graphics, or just having fun, our <strong>free Barbie font generator</strong> is the perfect solution.
+          </p>
+          
+          <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Why Choose Our Barbie Font Generator Online?</h3>
+          <p>
+            Our <strong>Barbie font generator online</strong> tool stands out with its easy-to-use interface and high-quality results. Unlike other generators, we offer multiple font styles including the popular <strong>Barbie font generator cursive</strong> option that mimics the iconic Barbie lettering. The best part? You can instantly <strong>Barbie font generator copy and paste</strong> your creation anywhere you need it!
+          </p>
+          
+          <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Inspired by the Iconic Barbie Movie</h3>
+          <p>
+            Fans of the blockbuster film will love our <strong>Barbie movie font generator</strong> features that capture the essence of the movie's typography. Our tool includes fonts inspired by the <strong>Barbie movie font generator</strong> aesthetic, allowing you to recreate that magical pink world in your own designs.
+          </p>
+          
+          <h3 className="text-xl font-semibold text-primary mt-6 mb-3">How to Use Our Barbie Font Generator</h3>
+          <ol className="list-decimal pl-5 space-y-2 mt-3">
+            <li>Enter your custom text in the input field</li>
+            <li>Choose from our selection of Barbie-inspired fonts</li>
+            <li>Select your preferred color from our palette</li>
+            <li>Adjust the font size to match your needs</li>
+            <li>Preview your creation in real-time</li>
+            <li>Download your finished design as a PNG image</li>
+          </ol>
+          
+          <p className="mt-6">
+            Start creating gorgeous Barbie-style text today with our completely <strong>free Barbie font generator</strong>. No sign-up required, no watermarks, just beautiful typography at your fingertips!
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

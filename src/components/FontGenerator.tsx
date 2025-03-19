@@ -31,7 +31,7 @@ export const FontGenerator = () => {
           Font Generator
         </span>
         <h1 className="text-4xl font-bold mb-2 font-pacifico">
-          Barbie Text Generator
+          Barbie Font Generator
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Create beautiful, Barbie-inspired text for your projects. Customize your text below and download it as an image.

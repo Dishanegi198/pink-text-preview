@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -13,7 +12,7 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			padding: "2rem",
 			screens: {
 				'2xl': '1400px'
 			}
@@ -70,6 +69,8 @@ export default {
 					purple: '#9370DB',
 					blush: '#FFD1DC',
 					peach: '#FFDAB9',
+					'barbie-blush': '#FFC9DC',
+					'barbie-peach': '#FFD6E0',
 				}
 			},
 			borderRadius: {

@@ -66,6 +66,50 @@ const Index = () => {
               Whether you're creating fan art, themed party invitations, or social media posts about the movie, our <strong>Barbie movie font generator</strong> helps you capture that perfect blend of nostalgia and contemporary style. The movie's impact on popular culture has been immense, and now you can tap into that visual language with just a few clicks.
             </p>
             
+            <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Perfect Barbie Fonts for Social Media Content</h3>
+            <p>
+              In today's digital world, standing out on social media is more important than ever. Our <strong>Barbie font styles</strong> are perfectly designed for creating eye-catching Instagram posts, TikTok videos, Facebook updates, and Pinterest pins. The distinctive Barbie typography instantly catches attention as users scroll through their feeds, making your content more memorable and shareable.
+            </p>
+            <p>
+              Whether you're a social media influencer looking to enhance your personal brand or just someone who loves sharing Barbie-themed content with friends, our <strong>custom Barbie text generator</strong> gives your posts that professional touch. Create stunning quotes, announcements, or captions that perfectly complement your Barbie-themed photos and videos.
+            </p>
+            <p>
+              With the rising popularity of short-form video content, having access to distinctive typography like our <strong>Barbie logo font generator</strong> can help your videos gain more views and engagement. Use our fonts to create attention-grabbing intro screens, lower thirds, or end cards for your TikTok and Instagram Reels that feature Barbie themes or aesthetics.
+            </p>
+
+            <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Barbie Birthday Party Decorations Made Easy</h3>
+            <p>
+              Planning a Barbie-themed birthday party? Our <strong>Barbie birthday font generator</strong> makes creating custom decorations a breeze! Design personalized invitations, thank you cards, party signs, name tags, food labels, and banners that perfectly match your Barbie party theme. The consistent typography across all your party materials creates a cohesive and professionally designed look.
+            </p>
+            <p>
+              Parents and party planners love our tool because it saves both time and money. Instead of purchasing expensive custom-printed Barbie decorations, you can create and print your own unique designs at home. Our <strong>Barbie lettering generator</strong> gives you the flexibility to customize every aspect of your party text, from the birthday child's name to specific party details.
+            </p>
+            <p>
+              For an extra special touch, use our generator to create personalized party favor tags, water bottle labels, or even custom t-shirt designs. The possibilities are endless when you have the right typography tools at your fingertips!
+            </p>
+
+            <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Barbie Font Styles Through the Decades</h3>
+            <p>
+              The Barbie brand has evolved significantly since its launch in 1959, and its typography has changed along with it. Our <strong>vintage Barbie font generator</strong> options allow you to explore different eras of Barbie design history. From the elegant, curved script of the early 1960s to the bold, colorful typography of the 1980s and the sleek, modern fonts of today's Barbie branding, our generator offers a typography time machine for Barbie enthusiasts.
+            </p>
+            <p>
+              Collectors and vintage Barbie fans particularly appreciate our attention to typographic detail. Whether you're documenting your collection, creating display cards, or just want to evoke the nostalgia of a specific Barbie era, our <strong>classic Barbie text style</strong> options help you capture the authentic look and feel of different Barbie periods.
+            </p>
+            <p>
+              Each font in our collection has been carefully crafted to represent different moments in Barbie's design evolution, making our tool not just a creative resource but also a celebration of this iconic brand's visual history and cultural impact across generations.
+            </p>
+
+            <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Educational Uses for Barbie Typography</h3>
+            <p>
+              Teachers and parents have discovered creative educational applications for our <strong>Barbie learning font tool</strong>. The appealing, familiar Barbie aesthetic can be used to create engaging learning materials for young students who are fans of the iconic doll. From alphabet flashcards to reading worksheets, math problems to science labels, adding Barbie typography makes learning materials more attractive and engaging for many children.
+            </p>
+            <p>
+              Early childhood educators have found that using our <strong>Barbie font for kids' activities</strong> can increase student engagement and motivation, especially for reluctant learners. The familiar and beloved Barbie style creates an immediate connection and positive association with learning materials, potentially increasing focus and retention.
+            </p>
+            <p>
+              Additionally, our tool can be used in creative writing assignments, allowing students to design their own Barbie-themed book covers, story illustrations, or character descriptions with authentic typography that matches their imagination and enhances their creative expression.
+            </p>
+
             <h3 className="text-xl font-semibold text-primary mt-6 mb-3">How to Use Our Barbie Font Generator</h3>
             <ol className="list-decimal pl-5 space-y-2 mt-3">
               <li>Enter your custom text in the input field - you can type anything from a single word to a short phrase</li>
@@ -94,6 +138,30 @@ const Index = () => {
               <li><strong>Educational Materials:</strong> Make learning more engaging for young Barbie fans with custom worksheets or flashcards</li>
               <li><strong>Scrapbooking:</strong> Add digital Barbie text to photos and memory books</li>
             </ul>
+
+            <h3 className="text-xl font-semibold text-primary mt-8 mb-4">Design Tips for Perfect Barbie Typography</h3>
+            <p>
+              Getting the most out of our <strong>Barbie text designer</strong> is easy with these professional tips:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 mt-3">
+              <li><strong>Color Combinations:</strong> While Barbie pink is iconic, try pairing it with complementary colors like turquoise, yellow, or purple for a balanced design that pops</li>
+              <li><strong>Background Contrast:</strong> Ensure your text is legible by choosing font colors that contrast well with your background</li>
+              <li><strong>Size Matters:</strong> For important information or headlines, use larger font sizes to create visual hierarchy</li>
+              <li><strong>Mix and Match:</strong> Combine different Barbie font styles for added visual interest - use a bold style for headlines and a simpler style for details</li>
+              <li><strong>Spacing and Alignment:</strong> Give your text room to breathe with proper spacing, and use consistent alignment for a professional look</li>
+              <li><strong>Keep it Brief:</strong> The most effective text designs keep wording concise and impactful</li>
+            </ul>
+            
+            <h3 className="text-xl font-semibold text-primary mt-8 mb-4">Barbie Font for Professional Designers</h3>
+            <p>
+              While our tool is accessible to everyone, professional graphic designers particularly appreciate the efficiency and quality of our <strong>Barbie typography generator</strong>. For client projects involving Barbie themes or aesthetics, having quick access to authentic-looking Barbie typography saves valuable design time and ensures brand consistency.
+            </p>
+            <p>
+              Designers working on commercial projects can use our tool for mockups and concept presentations, giving clients a clear vision of how Barbie typography could enhance their brand collateral, event materials, or promotional items before committing to final designs.
+            </p>
+            <p>
+              The transparent background option for downloaded images makes it simple to integrate Barbie text into complex design compositions in Photoshop, Illustrator, or other professional design software, streamlining workflow and expanding creative possibilities.
+            </p>
             
             <h3 className="text-xl font-semibold text-primary mt-8 mb-4">Frequently Asked Questions</h3>
             

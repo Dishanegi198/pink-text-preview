@@ -37,7 +37,7 @@ const Header = () => {
             </button>
 
             {isMenuOpen && (
-              <div className="fixed inset-0 top-[57px] bg-white z-40 animate-fade-in">
+              <div className="fixed inset-0 top-[57px] bg-white shadow-lg border-t z-40 animate-fade-in">
                 <nav className="container mx-auto px-4 py-6">
                   <ul className="flex flex-col space-y-4">
                     <li>

@@ -4,13 +4,9 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const Header = () => {
@@ -41,7 +37,7 @@ const Header = () => {
             </button>
 
             {isMenuOpen && (
-              <div className="fixed inset-0 top-[57px] bg-white z-40 animate-fade-in">
+              <div className="fixed inset-0 top-[57px] bg-background z-40 animate-fade-in">
                 <nav className="container mx-auto px-4 py-6">
                   <ul className="flex flex-col space-y-4">
                     <li>
@@ -71,33 +67,6 @@ const Header = () => {
                         Contact Us
                       </Link>
                     </li>
-                    <li>
-                      <Link 
-                        to="/privacy-policy" 
-                        className="block py-2 text-foreground hover:text-primary transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Privacy Policy
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        to="/terms" 
-                        className="block py-2 text-foreground hover:text-primary transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Terms & Conditions
-                      </Link>
-                    </li>
-                    <li>
-                      <Link 
-                        to="/disclaimer" 
-                        className="block py-2 text-foreground hover:text-primary transition-colors"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Disclaimer
-                      </Link>
-                    </li>
                   </ul>
                 </nav>
               </div>
@@ -120,45 +89,6 @@ const Header = () => {
                 <Link to="/contact" className="px-4 py-2 text-sm text-foreground hover:text-primary transition-colors">
                   Contact Us
                 </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="px-2 py-2 text-sm text-foreground hover:text-primary transition-colors">
-                  Legal
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 w-[200px]">
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          to="/privacy-policy"
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          Privacy Policy
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          to="/terms"
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          Terms & Conditions
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                    <li>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          to="/disclaimer"
-                          className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                        >
-                          Disclaimer
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
-                  </ul>
-                </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

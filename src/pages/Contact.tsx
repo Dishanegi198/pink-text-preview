@@ -13,7 +13,7 @@ const Contact = () => {
               Have questions, feedback, or suggestions about our Barbie Font Generator? We'd love to hear from you!
             </p>
             <p className="text-muted-foreground">
-              Please reach out to us at <span className="text-primary font-medium">support@barbiefontgenerator.com</span> and our team will get back to you as soon as possible.
+              Please reach out to us at <span className="text-primary font-medium">support@barbiefontgenerator.online</span> and our team will get back to you as soon as possible.
             </p>
           </div>
           
@@ -23,7 +23,7 @@ const Contact = () => {
             <div className="space-y-4">
               <div>
                 <h3 className="font-medium text-primary">Email</h3>
-                <p className="text-muted-foreground">support@barbiefontgenerator.com</p>
+                <p className="text-muted-foreground">support@barbiefontgenerator.online</p>
               </div>
               
               <div>

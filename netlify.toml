@@ -1,0 +1,15 @@
+
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "https://barbiefontgenerator.netlify.app/*"
+  to = "https://barbiefontgenerator.online/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

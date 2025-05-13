@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { FontSelector } from '@/components/FontSelector';
 import { ColorPicker } from '@/components/ColorPicker';
@@ -199,7 +200,7 @@ const TikTokCaption = () => {
                 </ul>
                 
                 <p className="mt-6">
-                  Start creating attention-grabbing TikTok captions today with our free <strong>Barbie TikTok Caption Generator</strong>!
+                  Start creating attention-grabbing TikTok captions today with our free <strong>Barbie TikTok Caption Generator</strong>! For even more styles and options, check out our main <Link to="/" className="text-primary hover:text-primary/80 underline font-medium">barbie font generator</Link> with additional customization features.
                 </p>
               </div>
             </section>

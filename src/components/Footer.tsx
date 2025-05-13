@@ -26,6 +26,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/tiktok-caption" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  TikTok Caption Generator
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About Us
                 </Link>

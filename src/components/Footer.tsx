@@ -31,6 +31,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/signature" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Signature Generator
+                </Link>
+              </li>
+              <li>
                 <Link to="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   About Us
                 </Link>

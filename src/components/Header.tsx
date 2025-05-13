@@ -60,6 +60,15 @@ const Header = () => {
                     </li>
                     <li>
                       <Link 
+                        to="/signature" 
+                        className="block py-2 text-foreground hover:text-primary transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Signature Generator
+                      </Link>
+                    </li>
+                    <li>
+                      <Link 
                         to="/about" 
                         className="block py-2 text-foreground hover:text-primary transition-colors"
                         onClick={() => setIsMenuOpen(false)}
@@ -92,6 +101,11 @@ const Header = () => {
               <NavigationMenuItem>
                 <Link to="/tiktok-caption" className="px-4 py-2 text-sm text-foreground hover:text-primary transition-colors">
                   TikTok Caption
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link to="/signature" className="px-4 py-2 text-sm text-foreground hover:text-primary transition-colors">
+                  Signature
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>

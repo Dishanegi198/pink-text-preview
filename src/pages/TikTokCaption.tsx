@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/Layout';
 import { FontSelector } from '@/components/FontSelector';
 import { ColorPicker } from '@/components/ColorPicker';
@@ -25,6 +26,11 @@ const TikTokCaption = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Barbie TikTok Caption Font Generator - Create Stylish Captions</title>
+        <meta name="description" content="Generate eye-catching Barbie-themed fonts for your TikTok captions. Customize your text with our easy-to-use generator and make your posts stand out!" />
+        <meta name="keywords" content="barbie tiktok font, tiktok caption generator, barbie font for tiktok, stylish tiktok captions" />
+      </Helmet>
       <div className="min-h-screen w-full">
         {/* Background gradient with pattern */}
         <div className="fixed inset-0 bg-gradient-to-br from-barbie-blush via-white to-barbie-peach z-[-1]">

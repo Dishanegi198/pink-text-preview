@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/Layout';
 import { SignatureGenerator } from '@/components/SignatureGenerator';
 import { cn } from '@/lib/utils';
@@ -17,6 +18,11 @@ const Signature = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Barbie Font Signature Generator - Create a Handwritten Signature</title>
+        <meta name="description" content="Design a unique, handwritten-style Barbie font signature for your creative projects. Download your signature for digital or printable use. Perfect for branding and creative users." />
+        <meta name="keywords" content="barbie signature font, handwritten signature generator, barbie font signature, custom signature maker" />
+      </Helmet>
       <div className="min-h-screen w-full">
         {/* Background gradient with pattern */}
         <div className="fixed inset-0 bg-gradient-to-br from-barbie-blush via-white to-barbie-peach z-[-1]">

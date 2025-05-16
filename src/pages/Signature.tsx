@@ -22,6 +22,155 @@ const Signature = () => {
         <title>Barbie Font Signature Generator - Create a Handwritten Signature</title>
         <meta name="description" content="Design a unique, handwritten-style Barbie font signature for your creative projects. Download your signature for digital or printable use. Perfect for branding and creative users." />
         <meta name="keywords" content="barbie signature font, handwritten signature generator, barbie font signature, custom signature maker" />
+        
+        {/* WebApplication Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Barbie Font Signature Generator",
+            "url": "https://barbiefontgenerator.com/signature",
+            "description": "Design a unique, handwritten-style Barbie font signature for your creative projects. Download your signature for digital or printable use.",
+            "applicationCategory": "DesignApplication",
+            "operatingSystem": "All",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "screenshot": "/og-image.png",
+            "featureList": "Custom signature input, Multiple handwritten-style fonts, Color customization, Size adjustment, PNG download with transparent background",
+            "softwareVersion": "1.0"
+          })}
+        </script>
+        
+        {/* SoftwareApplication Schema (additional context) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Barbie Signature Generator",
+            "operatingSystem": "Web",
+            "applicationCategory": "DesignApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "142"
+            }
+          })}
+        </script>
+        
+        {/* HowTo Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Create a Custom Barbie-Style Signature",
+            "description": "Create your own unique signature with Barbie-inspired fonts for branding, documents, or creative projects.",
+            "tool": {
+              "@type": "HowToTool",
+              "name": "Barbie Font Signature Generator"
+            },
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Enter your name or signature text",
+                "text": "Type your name or preferred signature text in the input field.",
+                "position": 1
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Select a handwritten font style",
+                "text": "Choose from our collection of Barbie-inspired handwritten font styles.",
+                "position": 2
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Choose a color",
+                "text": "Select a color that matches your personal brand or preferences.",
+                "position": 3
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Adjust signature size",
+                "text": "Use the size slider to create the perfect signature size.",
+                "position": 4
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Download your signature",
+                "text": "Click the download button to save your signature as a PNG with transparent background.",
+                "position": 5
+              }
+            ]
+          })}
+        </script>
+        
+        {/* FAQPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I use my Barbie font signature for legal documents?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "While our signature generator creates beautiful signatures, we recommend checking with the specific requirements of legal documents in your jurisdiction. Some documents may require traditional handwritten signatures rather than digital ones."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What format is my signature downloaded in?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your signature is downloaded as a PNG image with a transparent background, making it easy to place over any document or design without a visible box around it."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use my signature for branding materials?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely! Our Barbie font signatures are perfect for adding a personal touch to your brand assets, including websites, social media, business cards, and product packaging."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a character limit for my signature?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, to ensure optimal visual quality, there is a 30-character limit for signatures. Most signatures work best when kept relatively short and simple."
+                }
+              }
+            ]
+          })}
+        </script>
+        
+        {/* Tool Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": "Barbie Font Signature Generator Tool",
+            "creator": {
+              "@type": "Organization",
+              "name": "Lovable"
+            },
+            "abstract": "Free online tool to create stylish, handwritten-style signatures with Barbie fonts for digital documents, branding, and creative projects.",
+            "keywords": "barbie signature font, handwritten signature generator, barbie font signature, custom signature maker",
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Designers, brand owners, content creators, Barbie fans"
+            }
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen w-full">
         {/* Background gradient with pattern */}

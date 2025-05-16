@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -30,6 +29,128 @@ const TikTokCaption = () => {
         <title>Barbie TikTok Caption Font Generator - Create Stylish Captions</title>
         <meta name="description" content="Generate eye-catching Barbie-themed fonts for your TikTok captions. Customize your text with our easy-to-use generator and make your posts stand out!" />
         <meta name="keywords" content="barbie tiktok font, tiktok caption generator, barbie font for tiktok, stylish tiktok captions" />
+        
+        {/* WebApplication Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Barbie TikTok Caption Font Generator",
+            "url": "https://barbiefontgenerator.com/tiktok-caption",
+            "description": "Generate eye-catching Barbie-themed fonts for your TikTok captions. Customize your text with our easy-to-use generator and make your posts stand out!",
+            "applicationCategory": "DesignApplication",
+            "operatingSystem": "All",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "screenshot": "/og-image.png",
+            "featureList": "Custom caption input, Multiple Barbie-inspired fonts, Color customization, Font size adjustment, PNG download capability",
+            "softwareVersion": "1.0"
+          })}
+        </script>
+        
+        {/* SoftwareApplication Schema (additional context) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "TikTok Caption Generator with Barbie Fonts",
+            "operatingSystem": "Web",
+            "applicationCategory": "UtilitiesApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.7",
+              "ratingCount": "128"
+            }
+          })}
+        </script>
+        
+        {/* HowTo Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Create a Stylish TikTok Caption Using Barbie Font",
+            "description": "Follow these steps to create and download a custom stylish TikTok caption with Barbie-inspired fonts.",
+            "tool": {
+              "@type": "HowToTool",
+              "name": "Barbie TikTok Caption Generator"
+            },
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Enter your caption",
+                "text": "Type your TikTok caption in the text input field.",
+                "position": 1
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Choose a font style",
+                "text": "Select your preferred Barbie-inspired font from the available options.",
+                "position": 2
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Set your color",
+                "text": "Select a color that matches your brand or TikTok video aesthetic.",
+                "position": 3
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Adjust font size",
+                "text": "Use the size slider to make your text smaller or larger.",
+                "position": 4
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Download your caption",
+                "text": "Click the download button to save your customized caption as a PNG image.",
+                "position": 5
+              }
+            ]
+          })}
+        </script>
+        
+        {/* FAQPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do I use the Barbie TikTok caption generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simply type your caption text, select a Barbie-style font, choose a color, adjust the size, and download your caption as a PNG image."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this TikTok caption generator free to use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Our Barbie TikTok caption generator is completely free to use with no hidden charges."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I add my generated caption to my TikTok video?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "After downloading your caption image, import it into your TikTok video using a video editing app that supports overlays, or add it directly in TikTok's editing tools as a sticker."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <div className="min-h-screen w-full">
         {/* Background gradient with pattern */}

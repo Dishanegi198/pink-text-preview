@@ -3,6 +3,14 @@ import { Link, useParams, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import { blogPosts } from "@/lib/blogData";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -15,8 +23,88 @@ const BlogPost = () => {
   return (
     <Layout>
       <Helmet>
-        <title>{post.title} | Barbie Font Generator</title>
-        <meta name="description" content={post.excerpt} />
+        <title>{post.metaTitle || post.title}</title>
+        <meta name="description" content={post.metaDescription || post.excerpt} />
+        {/* Schema markup */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": "${post.title}",
+              "description": "${post.metaDescription || post.excerpt}",
+              "image": "${post.featuredImage}",
+              "author": {
+                "@type": "Person",
+                "name": "Barbie Font Generator Team"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Barbie Font Generator",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://barbiefontgenerator.online/og-image.png"
+                }
+              },
+              "datePublished": "${post.publishedDate || post.date}",
+              "dateModified": "${post.modifiedDate || post.date}",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://barbiefontgenerator.online/blog/${post.slug}"
+              }
+            }
+          `}
+        </script>
+        
+        {/* BreadcrumbList schema */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://barbiefontgenerator.online/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://barbiefontgenerator.online/blog"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "${post.title}",
+                  "item": "https://barbiefontgenerator.online/blog/${post.slug}"
+                }
+              ]
+            }
+          `}
+        </script>
+        
+        {/* FAQ schema */}
+        {post.faqs && (
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": ${JSON.stringify(post.faqs.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
+                  }
+                })))}
+              }
+            `}
+          </script>
+        )}
       </Helmet>
       
       <div className="min-h-screen w-full">
@@ -27,13 +115,23 @@ const BlogPost = () => {
 
         {/* Main content */}
         <main className="py-8 px-4 max-w-3xl mx-auto">
-          {/* Breadcrumbs */}
-          <div className="text-sm mb-8">
-            <Link to="/" className="text-muted-foreground hover:text-primary">Home</Link>
-            <span className="mx-2 text-muted-foreground">›</span>
-            <Link to="/blog" className="text-muted-foreground hover:text-primary">Blog</Link>
-            <span className="mx-2 text-muted-foreground">›</span>
-            <span className="text-primary">{post.title}</span>
+          {/* Breadcrumbs using shadcn breadcrumb component */}
+          <div className="mb-8">
+            <Breadcrumb>
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage>{post.title}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
           </div>
           
           <article className="prose prose-pink max-w-none">
@@ -41,7 +139,34 @@ const BlogPost = () => {
               {post.category} • {post.date}
             </span>
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">{post.title}</h1>
+            
+            {/* Featured Image */}
+            {post.featuredImage && (
+              <div className="mb-8">
+                <img 
+                  src={post.featuredImage} 
+                  alt={post.title}
+                  className="rounded-lg w-full h-auto shadow-md"
+                />
+              </div>
+            )}
+            
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            
+            {/* FAQs Section */}
+            {post.faqs && post.faqs.length > 0 && (
+              <div className="mt-12 border-t pt-8">
+                <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+                <div className="space-y-6">
+                  {post.faqs.map((faq, index) => (
+                    <div key={index} className="bg-white/50 p-6 rounded-lg shadow-sm">
+                      <h3 className="font-bold text-lg mb-2">{faq.question}</h3>
+                      <p>{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </article>
           
           {/* Related Posts */}

@@ -5,8 +5,35 @@ export const blogPosts = [
     title: "10 Best Barbie Fonts for Instagram Bios & Aesthetics (Free & Stylish!)",
     slug: "best-barbie-fonts-for-instagram",
     date: "May 18, 2025",
+    publishedDate: "2025-05-18",
+    modifiedDate: "2025-05-19",
     category: "Typography Tips",
+    metaTitle: "Barbie Font Guide - Instagram Bio & Aesthetic Fonts",
+    metaDescription: "Discover the best Barbie fonts for your Instagram profile! From elegant scripts to playful bubblegum styles, find the perfect font to create a fabulous Barbie aesthetic.",
+    featuredImage: "/lovable-uploads/9ec182c1-523a-4fb0-8946-7fad4b946f6d.png",
     excerpt: "Want your Instagram profile to scream Barbiecore in the most fabulous way possible? Choosing the right font can transform your boring bio into a pink paradise that gets all the likes.",
+    faqs: [
+      {
+        question: "What are the best Barbie fonts for Instagram?",
+        answer: "The best Barbie fonts include Classic Barbie Script, Bubblegum Pink, Disco Barbie, Dreamy Swirls, Neon Barbie, Barbie Signature, Cartoon Doll, Glamorous Gold, Minimalist Barbie, and Rainbow Sparkle."
+      },
+      {
+        question: "How do I choose the right Barbie font?",
+        answer: "Consider your personal brand aesthetic, readability, contrast, and versatility when selecting a font."
+      },
+      {
+        question: "Where can I use these Barbie fonts?",
+        answer: "These fonts are perfect for Instagram bios, captions, stories, and other social media content."
+      },
+      {
+        question: "Are these Barbie fonts free to use?",
+        answer: "Many of the Barbie fonts mentioned are free for personal use, but always check licensing before using them commercially. Our Barbie font generator offers free fonts for personal use."
+      },
+      {
+        question: "How can I make my Instagram profile look like Barbie?",
+        answer: "Combine great fonts with stunning visuals, engaging captions, and your unique personality. Use pink color schemes, add playful elements, and maintain a consistent aesthetic across your posts."
+      }
+    ],
     content: `
       <p>Want your Instagram profile to scream Barbiecore in the most fabulous way possible? Choosing the right font can transform your boring bio into a pink paradise that gets all the likes. We've hunted down the most stylish, eye-catching Barbie-inspired fonts that will make your profile stand out from the crowd.</p>
       
@@ -163,7 +190,7 @@ export const blogPosts = [
       
       <p>Remember - great fonts are just the beginning. Combine them with stunning visuals, engaging captions, and your unique personality to create a profile that's truly unforgettable. Now go forth and make your Instagram as glamorous as Barbie's dreamhouse!</p>
       
-      <p class="mt-8">Ready to transform your Instagram bio? Try our free <a href="/" class="text-primary hover:text-primary/80 font-medium">Barbie font generator</a> to instantly create eye-catching text for your social media profiles!</p>
+      <p class="mt-8">Ready to transform your Instagram bio? Try our free <a href="/" class="text-primary hover:text-primary/80 font-medium">Barbie font generator (copy and paste)</a> to instantly create eye-catching text for your social media profiles!</p>
     `
   }
 ];

@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import { blogPosts } from "@/lib/blogData";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const Blog = () => {
   return (
@@ -70,33 +78,33 @@ const Blog = () => {
           {/* Blog post cards */}
           <div className="grid grid-cols-1 gap-8">
             {blogPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-lg shadow overflow-hidden hover:shadow-md transition-shadow">
-                <Link to={`/blog/${post.slug}`}>
+              <Card key={post.id} className="overflow-hidden hover:shadow-md transition-shadow">
+                <Link to={`/blog/${post.slug}`} className="block">
                   {post.featuredImage && (
-                    <div className="w-full h-48 overflow-hidden">
+                    <div className="w-full overflow-hidden">
                       <img 
                         src={post.featuredImage} 
                         alt={post.title}
-                        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                        className="w-full object-contain transition-transform hover:scale-105 duration-300"
                       />
                     </div>
                   )}
-                  <div className="p-6">
-                    <span className="text-xs text-primary/70 font-medium uppercase tracking-wider mb-2 block">
+                  <CardHeader>
+                    <div className="text-xs text-primary/70 font-medium uppercase tracking-wider mb-2">
                       {post.category} • {post.date}
-                    </span>
-                    <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2 hover:text-primary transition-colors">
-                      {post.title}
-                    </h2>
-                    <p className="text-muted-foreground line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                    <div className="mt-4 flex items-center">
-                      <span className="text-primary text-sm font-medium">Read more →</span>
                     </div>
-                  </div>
+                    <CardTitle className="text-xl md:text-2xl hover:text-primary transition-colors">
+                      {post.title}
+                    </CardTitle>
+                    <CardDescription className="line-clamp-3">
+                      {post.excerpt}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardFooter>
+                    <span className="text-primary text-sm font-medium">Read more →</span>
+                  </CardFooter>
                 </Link>
-              </article>
+              </Card>
             ))}
           </div>
         </main>

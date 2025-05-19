@@ -69,6 +69,15 @@ const Header = () => {
                     </li>
                     <li>
                       <Link 
+                        to="/blog" 
+                        className="block py-2 text-foreground hover:text-primary transition-colors"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link 
                         to="/about" 
                         className="block py-2 text-foreground hover:text-primary transition-colors"
                         onClick={() => setIsMenuOpen(false)}
@@ -106,6 +115,11 @@ const Header = () => {
               <NavigationMenuItem>
                 <Link to="/signature" className="px-4 py-2 text-sm text-foreground hover:text-primary transition-colors">
                   Signature
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link to="/blog" className="px-4 py-2 text-sm text-foreground hover:text-primary transition-colors">
+                  Blog
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>

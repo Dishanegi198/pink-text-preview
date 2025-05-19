@@ -1,8 +1,8 @@
-
 import { useEffect, useState } from 'react';
 import { FontGenerator } from '@/components/FontGenerator';
 import { cn } from '@/lib/utils';
 import Layout from '@/components/Layout';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -54,6 +54,20 @@ const Index = () => {
             <p>
               Since our tool is completely web-based, there's no need to download or install any software. This makes it accessible from any device with an internet connection - whether you're on your computer, tablet, or smartphone. Our responsive design ensures a seamless experience regardless of screen size, giving you the freedom to create Barbie-style text whenever and wherever inspiration strikes.
             </p>
+
+            {/* Added Blog Link Section */}
+            <div className="my-6 p-4 border border-primary/20 bg-primary/5 rounded-lg">
+              <h4 className="text-lg font-semibold text-primary mb-2">Looking for Instagram Inspiration?</h4>
+              <p className="mb-3">
+                Check out our latest blog post: <Link to="/blog/best-barbie-fonts-for-instagram" className="text-primary hover:text-primary/80 font-medium">10 Best Barbie Fonts for Instagram Bios & Aesthetics</Link> - discover how our <Link to="/" className="text-primary hover:text-primary/80 font-medium">barbie font generator (copy and paste)</Link> tool can transform your social media presence!
+              </p>
+              <Link to="/blog" className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80">
+                Visit our Blog
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </Link>
+            </div>
             
             <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Inspired by the Iconic Barbie Movie</h3>
             <p>

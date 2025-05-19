@@ -14,6 +14,8 @@ import Disclaimer from "./pages/Disclaimer";
 import NotFound from "./pages/NotFound";
 import TikTokCaption from "./pages/TikTokCaption";
 import Signature from "./pages/Signature";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +35,8 @@ const App = () => (
             <Route path="/disclaimer" element={<Disclaimer />} />
             <Route path="/tiktok-caption" element={<TikTokCaption />} />
             <Route path="/signature" element={<Signature />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

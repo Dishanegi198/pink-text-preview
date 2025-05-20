@@ -1,4 +1,3 @@
-
 // Remove the Next.js specific import
 // import { StaticImageData } from "next/image";
 
@@ -39,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <h1>10 Best Barbie Fonts for Instagram Bios & Aesthetics</h1>
       
-      <p>Looking to add some Barbie magic to your Instagram profile? The right typography can instantly transform your bio, captions, and stories into a pink paradise that captures that perfect Barbie aesthetic. From the playful curves of the classic Barbie logo to modern interpretations inspired by the hit movie, these fonts bring that iconic Barbie vibe to your social media presence.</p>
+      <p>Looking to add some Barbie magic to your Instagram profile? The right typography can instantly transform your bio, captions and stories into a pink paradise that captures that perfect Barbie aesthetic. From the playful curves of the classic Barbie logo to modern interpretations inspired by the hit movie, these fonts bring that iconic Barbie vibe to your social media presence.</p>
       
       <p>These fonts range from elegant cursive scripts to bold playful styles - perfect for creating that perfect Barbie aesthetic. Best part? You don't need any design experience to use them. Try our <a href="/" class="text-primary hover:text-primary/80 font-medium">barbie font generator (copy and paste)</a> tool to easily create stunning text for your social media profiles. Let's explore these gorgeous font options that will give your profile that instant glam upgrade.</p>
       
@@ -249,7 +248,7 @@ export const blogPosts: BlogPost[] = [
     date: "May 21, 2025",
     category: "Font Comparison",
     excerpt: "Compare Barbie fonts with Retro fonts to determine which style best fits your brand identity and messaging goals.",
-    featuredImage: "/lovable-uploads/cee5d183-c25c-4c07-950e-8c2ea51cef84.png",
+    featuredImage: "/lovable-uploads/46976972-5fca-468a-997d-3d11a57ca2ed.png",
     metaTitle: "Barbie vs. Retro Fonts: Which Style Best Fits Your Brand? (2025 Guide)",
     metaDescription: "Discover whether Barbie-style fonts or Retro typography better suits your brand identity. Compare styles, use cases, and best practices in this comprehensive guide.",
     publishedDate: "2025-05-21T10:00:00.000Z",

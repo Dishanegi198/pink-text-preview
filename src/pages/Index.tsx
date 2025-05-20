@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { FontGenerator } from '@/components/FontGenerator';
 import { cn } from '@/lib/utils';
@@ -70,6 +71,15 @@ const Index = () => {
             </div>
             
             <h3 className="text-xl font-semibold text-primary mt-6 mb-3">Inspired by the Iconic Barbie Movie</h3>
+            
+            <div className="flex justify-center my-6">
+              <img 
+                src="/lovable-uploads/cee5d183-c25c-4c07-950e-8c2ea51cef84.png" 
+                alt="All About The Barbie Font" 
+                className="max-w-full rounded-lg shadow-md"
+              />
+            </div>
+            
             <p>
               Fans of the blockbuster film will love our <strong>Barbie movie font generator</strong> features that capture the essence of the movie's typography. Our tool includes fonts inspired by the <strong>Barbie movie font generator</strong> aesthetic, allowing you to recreate that magical pink world in your own designs.
             </p>
@@ -248,3 +258,4 @@ const Index = () => {
 };
 
 export default Index;
+

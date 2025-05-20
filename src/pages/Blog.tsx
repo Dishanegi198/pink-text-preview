@@ -67,7 +67,7 @@ const Blog = () => {
         </div>
 
         {/* Main content */}
-        <main className="py-8 px-4 max-w-4xl mx-auto">
+        <main className="py-8 px-4 max-w-6xl mx-auto">
           <div className="mb-10">
             <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6">Blog</h1>
             <p className="text-muted-foreground">
@@ -75,32 +75,32 @@ const Blog = () => {
             </p>
           </div>
 
-          {/* Blog post cards */}
-          <div className="grid grid-cols-1 gap-8">
+          {/* Blog post cards in grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="overflow-hidden hover:shadow-md transition-shadow">
-                <Link to={`/blog/${post.slug}`} className="block">
+              <Card key={post.id} className="flex flex-col h-full overflow-hidden hover:shadow-md transition-shadow">
+                <Link to={`/blog/${post.slug}`} className="block h-full flex flex-col">
                   {post.featuredImage && (
-                    <div className="w-full overflow-hidden">
+                    <div className="w-full h-48 overflow-hidden">
                       <img 
                         src={post.featuredImage} 
                         alt={post.title}
-                        className="w-full object-contain transition-transform hover:scale-105 duration-300"
+                        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
                       />
                     </div>
                   )}
-                  <CardHeader>
+                  <CardHeader className="flex-1">
                     <div className="text-xs text-primary/70 font-medium uppercase tracking-wider mb-2">
                       {post.category} • {post.date}
                     </div>
-                    <CardTitle className="text-xl md:text-2xl hover:text-primary transition-colors">
+                    <CardTitle className="text-lg md:text-xl hover:text-primary transition-colors">
                       {post.title}
                     </CardTitle>
-                    <CardDescription className="line-clamp-3">
+                    <CardDescription className="line-clamp-3 mt-2">
                       {post.excerpt}
                     </CardDescription>
                   </CardHeader>
-                  <CardFooter>
+                  <CardFooter className="mt-auto pt-0">
                     <span className="text-primary text-sm font-medium">Read more →</span>
                   </CardFooter>
                 </Link>

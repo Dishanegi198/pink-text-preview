@@ -39,6 +39,16 @@ export const blogPosts = [
       
       <p>These fonts range from elegant cursive scripts to bold playful styles - perfect for creating that perfect Barbie aesthetic. Best part? You don't need any design experience to use them. Try our <a href="/" class="text-primary hover:text-primary/80 font-medium">barbie font generator (copy and paste)</a> tool to easily create stunning text for your social media profiles. Let's explore these gorgeous font options that will give your profile that instant glam upgrade.</p>
       
+      <h2 class="text-2xl font-bold mt-8 mb-4">Inspired by the Iconic Barbie Movie</h2>
+      
+      <div class="flex justify-center my-6">
+        <img 
+          src="/lovable-uploads/cee5d183-c25c-4c07-950e-8c2ea51cef84.png" 
+          alt="All About The Barbie Font" 
+          class="max-w-full rounded-lg shadow-md"
+        />
+      </div>
+      
       <h2 class="text-2xl font-bold mt-8 mb-4">1. Classic Barbie Script (Elegant & Girly)</h2>
       
       <p>This beautiful cursive font captures the essence of Barbie's signature style with its flowing, graceful letters. The delicate swirls and feminine curves make it ideal for anyone wanting to add a touch of sophistication to their profile.</p>

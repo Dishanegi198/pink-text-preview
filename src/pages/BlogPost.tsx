@@ -151,7 +151,10 @@ const BlogPost = () => {
               </div>
             )}
             
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div 
+              dangerouslySetInnerHTML={{ __html: post.content }}
+              className="[&_img]:max-w-full [&_img]:mx-auto [&_img]:rounded-lg"
+            />
             
             {/* FAQs Section */}
             {post.faqs && post.faqs.length > 0 && (

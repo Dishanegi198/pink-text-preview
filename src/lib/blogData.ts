@@ -1,4 +1,6 @@
-import { StaticImageData } from "next/image";
+
+// Remove the Next.js specific import
+// import { StaticImageData } from "next/image";
 
 export type FAQ = {
   question: string;
@@ -12,7 +14,7 @@ export type BlogPost = {
   date: string;
   category: string;
   excerpt: string;
-  featuredImage: string;
+  featuredImage: string; // This is just a string path to the image
   metaTitle?: string;
   metaDescription?: string;
   publishedDate?: string;

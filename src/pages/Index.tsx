@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { FontGenerator } from '@/components/FontGenerator';
 import { cn } from '@/lib/utils';
@@ -84,7 +83,7 @@ const Index = () => {
               Fans of the blockbuster film will love our <strong>Barbie movie font generator</strong> features that capture the essence of the movie's typography. Our tool includes fonts inspired by the <strong>Barbie movie font generator</strong> aesthetic, allowing you to recreate that magical pink world in your own designs.
             </p>
             <p>
-              The 2023 Barbie movie directed by Greta Gerwig brought a fresh wave of Barbie enthusiasm to audiences worldwide. The film's distinctive visual style, including its custom typography, created a new benchmark for Barbie aesthetics. Our font generator incorporates elements from this cinematic milestone, giving you access to typography that evokes the modern, self-aware Barbie brand that captivated millions of viewers.
+              The <a href="https://www.imdb.com/title/tt1517268/" target="_blank" rel="noopener noreferrer">2023 Barbie movie</a> directed by Greta Gerwig brought a fresh wave of Barbie enthusiasm to audiences worldwide. The film's distinctive visual style, including its custom typography, created a new benchmark for Barbie aesthetics. Our font generator incorporates elements from this cinematic milestone, giving you access to typography that evokes the modern, self-aware Barbie brand that captivated millions of viewers.
             </p>
             <p>
               Whether you're creating fan art, themed party invitations, or social media posts about the movie, our <strong>Barbie movie font generator</strong> helps you capture that perfect blend of nostalgia and contemporary style. The movie's impact on popular culture has been immense, and now you can tap into that visual language with just a few clicks.
@@ -258,4 +257,3 @@ const Index = () => {
 };
 
 export default Index;
-
